@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=10;    // variable declaration as well as initialization int a=10;
+        a=20;  // variable re-initialization                                a=20;    
+        var a=30;  // variable re-declaration as well as re-initialization  int a=30;
+        document.write(a);  // output: 30
+        document.write("<br>");
+        let b=10;    // variable declaration as well as initialization int b=10;
+        b=20;  // variable re-initialization                                b=20;
+        //let b = 30;       Error 
+        document.write(b);  // output: 20
+        document.write("<br>");
+        for(var i=0;i<100000;i++){
+
+        }
+        document.write(i);  // output: 100000
+        document.write("<br>");
+        for(let j=0;j<100000;j++){
+
+        }   
+       // document.write(j);  // Error 
+        document.write("<br>");
+        const c=10;    // variable declaration as well as initialization int c=10;
+        document.write(c);  // output: 10
+        document.write("<br>");
+        c=20;  // Error: Assignment to constant variable.
+    </script>
+</body>
+</html>
