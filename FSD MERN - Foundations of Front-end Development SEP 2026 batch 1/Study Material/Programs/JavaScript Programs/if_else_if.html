@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Student Grading System</h2>
+
+    <script>
+        let studentName = "Amit";
+        let marks = 75;
+        let grade;
+        if (marks < 0 || marks > 100) {
+            grade = "Invalid Marks";
+        } else if (marks >= 90) {
+            grade = "A";
+        } else if (marks >= 75) {
+            grade = "B";
+        } else if (marks >= 60) {
+            grade = "C";
+        } else if (marks >= 40) {
+            grade = "D";
+        } else {
+            grade = "F";
+        }
+        document.write("<div style='border: 1px solid black; padding: 10px; width: 300px;'>");
+        document.write("Student: " + studentName + "<br>");
+        document.write("Marks: " + marks + "<br>");
+        document.write("Grade: " + grade);
+        document.write("</div>")
+    </script>
+</body>
+</html>
