@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=10        //number type consider 
+        let b="10"      // string type consider
+        let c = 10;  // number type consider
+       document.write(a==b)  //it check value not type so it return true
+       document.write("<br>")
+       document.write(a===b) //it check value and type so it return false
+       document.write("<br>")
+       document.write(a===c) //it check value and type so it return false
+       document.write("<br>")
+       document.write(typeof a + "<br>")
+       document.write(typeof b + "<br>")
+       document.write(typeof c + "<br>")
+       let msg;
+       document.write("Value of msg "+msg+" type of msg "+typeof msg+"<br/>") //undefined type consider
+       msg = 100;
+      document.write("Value of msg "+msg+" type of msg "+typeof msg+"<br/>") //number type consider
+        msg = "Hello";
+      document.write("Value of msg "+msg+" type of msg "+typeof msg+"<br/>") //string type consider
+      msg = true;
+      document.write("Value of msg "+msg+" type of msg "+typeof msg+"<br/>") //boolean type consider
+      document.write("Ternary operator <br/>") //ternary operator consider
+      let age = 20;
+      // condition ? true : false
+      let result = (age>=18) ? "Eligible for vote" : "Not Eligible"
+      document.write(result)
+    </script>
+</body>
+</html>
