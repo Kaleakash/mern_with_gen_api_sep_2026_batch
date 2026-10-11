@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=10;
+        let b=3;
+        document.write("Arithmetic Operators<br>");
+        let sum = a + b;
+        let sub = a - b;
+        let mul = a * b;
+        let div = a / b;
+        let mod = a % b;    // remainder
+        document.write("Sum: " + sum + "<br>");
+        document.write("Sub: " + sub + "<br>");
+        document.write("Mul: " + mul + "<br>");
+        document.write("Div: " + div + "<br>");
+        document.write("Mod: " + mod + "<br>");
+        document.write("<br>Comparison Operators or conditional operator<br>");
+        let result1 = a > b;
+        let result2 = a < b;
+        let result3 = a >= b;
+        let result4 = a <= b;
+        let result5 = a == b;
+        let result6 = a != b;
+        document.write("Result1 (a > b): " + result1 + "<br>");
+        document.write("Result2 (a < b): " + result2 + "<br>");
+        document.write("Result3 (a >= b): " + result3 + "<br>");
+        document.write("Result4 (a <= b): " + result4 + "<br>");
+        document.write("Result5 (a == b): " + result5 + "<br>");
+        document.write("Result6 (a != b): " + result6 + "<br>");
+        document.write("<br>Assignment Operator<br>");
+        let num = 100;
+        document.write("Num: " + num + "<br>");
+        let num1 = 50;
+        let num2 = 50;
+        let num3 = num1==num2;
+        document.write("Num1: " + num1 + "<br>");
+        document.write("Num2: " + num2 + "<br>");
+        document.write("Num3: " + num3 + "<br>");
+        document.write("<br/>Logical Operators<br>");
+        let x = true;
+        let y = false;
+        let andResult = x && y;     // both the conditions should be true then result true. 
+        let orResult = x || y;      // if any one condition is true then result true.
+        let notResult = !x;         // if x is true then result false.
+        document.write("AND Result: " + andResult + "<br>");
+        document.write("OR Result: " + orResult + "<br>");
+        document.write("NOT Result: " + notResult + "<br>");
+        document.write("<br/> Increment and Decrement Operators<br>");
+        let n = 100;
+        document.write("N: " + n + "<br>");
+        n = n+1;    // previous value increment by 1 
+        document.write("N after increment: " + n + "<br>");
+        n++;          // previous value increment by 1
+        document.write("N after increment: " + n + "<br>");
+        n = n-1;    // previous value decrement by 1
+        document.write("N after decrement: " + n + "<br>");
+        n--;          // previous value decrement by 1
+        document.write("N after decrement: " + n + "<br>");
+    </script>
+</body>
+</html>
