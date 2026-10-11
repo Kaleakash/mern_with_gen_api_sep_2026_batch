@@ -14,7 +14,7 @@
        document.write("<br>")
        document.write(a===b) //it check value and type so it return false
        document.write("<br>")
-       document.write(a===c) //it check value and type so it return false
+       document.write(a===c) //it check value and type so it return true
        document.write("<br>")
        document.write(typeof a + "<br>")
        document.write(typeof b + "<br>")
@@ -30,8 +30,11 @@
       document.write("Ternary operator <br/>") //ternary operator consider
       let age = 20;
       // condition ? true : false
-      let result = (age>=18) ? "Eligible for vote" : "Not Eligible"
-      document.write(result)
+     let nationality = "India"
+    let result1 = (age>=18 && nationality==="India") ? "Eligible for vote" : "Not Eligible"
+    document.write(result1 + "<br/>")
+    let result2 = (age>=18 && nationality==="USA") ? "Eligible for vote" : "Not Eligible"
+    document.write(result2 + "<br/>")
     </script>
 </body>
 </html>
