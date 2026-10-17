@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // addition of two number using expression 
+        // let addNumber1 = function(a,b){
+        //     let sum = a+b
+        //     return sum
+        // }
+        // let result1 = addNumber1(10,20)
+        // document.write("Addition of two number using expression style "+result1)
+        // // addition of two number using arrow style 
+        // let addNumber2 = (a,b)=>a+b
+        // let result2 = addNumber2(10,20)
+        // document.write("<br/>Addition of two number using arrow style "+result2)
+
+        // arrow no passing parameter no return type 
+        let welcome = ()=>document.write("<br/> Welcome to Arrow function no passing parameter <br/>")
+        
+        // function welcome() {
+        //
+        //}
+        // calling function 
+        welcome();
+        // arrow function passing parameter 
+        let add = (a,b)=>document.write(a+b)
+        //  function add(a,b){
+        //  document.write(a+b)
+        //}
+        //
+        add(10,20)
+        // arrow function passing parameter and return value without return keyword. 
+        let addNumber = (a,b)=>a+b
+        let result = addNumber(100,200)
+        document.write("<br/> Addition of two number using arrow "+result)
+
+        // find largest of two number using expression 
+        let findLargest1 = function(a,b){
+            if(a>b){
+                return "a is largest"
+            }else {
+                return "b is largest"
+            }
+        }
+        let result2 = findLargest1(10,20)
+        // find largest of two number using arrow 
+        let findLargest2 = (a,b)=>{
+            if(a>b){
+                return "a is largest"
+            }else {
+                return "b is largest"
+            }
+        }
+        let result3 = findLargest1(10,20)
+        document.write("<br/> Largest of two number using expression style "+result2)
+        document.write("<br/> Largest of two number using arrow style "+result3)
+    </script>
+</body>
+</html>

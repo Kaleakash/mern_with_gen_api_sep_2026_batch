@@ -8,18 +8,21 @@
 <body>
     <script>
         display1()
-        // Normal function it support js hosting 
+        // Normal function it support js hoisting 
         function display1(){
             document.write("<br/> Normal Function <br/>")
         }
         display1()
-
         //display2()        we can't call 
-        // expression function it doesn't support js hosting 
+        // expression function it doesn't support js hoisting  
         let display2 = function() {
             document.write("<br/> Expression type function<br/>")
         }
         display2();
+        // arrow function 
+        let display3 = ()=>document.write("<br/> simple arrow function")
+        display3();
+
     </script>
 </body>
 </html>
