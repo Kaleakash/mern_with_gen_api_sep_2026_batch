@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>User defined function</h2>
+    <script>
+        // normal function no passing parameter and no return value 
+        function greet() {
+            alert("Welcome to user defined function")
+        }
+        greet()
+        // function passing parameter 
+        function addNumber(a,b){
+            let sum = a+b
+            alert("Sum of two number inside a function "+sum)
+        }
+        addNumber(10,20)
+        addNumber(100,200)
+        // function passing parameter and return value 
+        function checkLogin(emailId,password){
+            if(emailId==="admin@gmail.com" && password==="admin@123"){
+                return "successfully login";
+            }else {
+                return "failure try once again"
+            }
+        }
+        let result = checkLogin("admin@gmail.com","admin@123")
+        alert("Result in outside function "+result)
+    </script>
+</body>
+</html>
