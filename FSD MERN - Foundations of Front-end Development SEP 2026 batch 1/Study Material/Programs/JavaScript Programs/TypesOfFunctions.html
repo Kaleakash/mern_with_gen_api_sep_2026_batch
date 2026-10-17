@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        display1()
+        // Normal function it support js hosting 
+        function display1(){
+            document.write("<br/> Normal Function <br/>")
+        }
+        display1()
+
+        //display2()        we can't call 
+        // expression function it doesn't support js hosting 
+        let display2 = function() {
+            document.write("<br/> Expression type function<br/>")
+        }
+        display2();
+    </script>
+</body>
+</html>
