@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Retrieve array element one by one</h2>
+    <script>
+        let names = ["Raj","John","Mahesh","Ali","Bob","Neeta"]
+        document.write("<br/> All names "+names) // it display all names as string form separated by ,
+        document.write("<br/> All names "+names.join("<br/>"))
+        document.write("<br/> Get first name using index position "+names[0])
+        document.write("<br/> Using for loop")
+        for(let i=0;i<names.length;i++){
+            document.write("<br/>Name is "+names[i])
+        }
+        document.write("<br/> for of loop")
+        for(let name of names){
+            document.write("<br/>Name is "+name)
+        }
+        document.write("<br/> for in loop")
+        for(let index in names){
+            document.write("<br/> Index "+index+" Value is "+names[index])
+        }
+    </script>
+</body>
+</html>
