@@ -17,13 +17,20 @@
         let num1 = [];      // it can hold more than one value of any types. 
         let num2 = [100,200,300,400,500,600]
         document.write("<br/>Value of num1 is "+num1)
+        document.write("<br/>Value of num2 is "+num2) // display data in string format separated by , 
+        document.write("<br/> Access particular value using index "+num2[0]) // 100
+        document.write("<br/> Access particular value using index "+num2[1]) // 200 
+        document.write("<br/> Access particular value using index "+num2[5])    // 600 
+        document.write("<br/> Size of num1 array "+num1.length); // 0, length pre defined property of array object. 
+        document.write("<br/> Size of num2 array "+num2.length) // 6 
+        num2.push(700);     // it add at last       tail 
+        num2.push(800);     // it add at last       tail 
+        num2.unshift(1000)  // it add at the start position head  
+        num2.unshift(2000)  // it add at the start position head  
         document.write("<br/>Value of num2 is "+num2)
-        document.write("<br/> Access particular value using index "+num2[0])
-        document.write("<br/> Access particular value using index "+num2[1])
-        document.write("<br/> Access particular value using index "+num2[5])
-        document.write("<br/> Size of num1 array "+num1.length); // length pre defined property of array object. 
-        document.write("<br/> Size of num2 array "+num2.length)
-        
+        num2.pop();     // remove from last 
+        num2.shift()    // remove from starting position 
+        document.write("<br/>Value of num2 is "+num2)
     </script>
 </body>
 </html>
