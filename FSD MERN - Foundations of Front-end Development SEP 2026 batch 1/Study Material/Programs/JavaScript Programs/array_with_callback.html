@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Array operation with splice and callback functions</h2>
+    <script>
+        let num1 = [1,2,3,4,5,6,7,8,9,10]
+        //document.write("<br/> All elements "+num1)
+        // 1st parameter index position and 2nd parameter number of element to delete 
+        // 3rd parameter add element from that position 
+       // num1.splice(2,1);   // it remove 300 
+       // num1.splice(2,2)        // it remove 300,400
+        //num1.splice(3,0,1000)
+        //num1.splice(3,0,1000,2000,3000)
+        //num1.splice(2,2,111)
+        //document.write("<br/> All elements "+num1)
+        num1.forEach(v=>document.write("<br/> Value is "+v))
+        // display only even number from array 
+        document.write("<br/> Even number")
+        for(let n of num1){
+            if(n%2==0){
+                document.write("<br/>Even number "+n)
+            }
+        }
+        num1.filter(v=>v%2==0).forEach(v=>document.write("<br/> Value is "+v))
+    </script>
+</body>
+</html>
