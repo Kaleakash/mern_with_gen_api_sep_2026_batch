@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Date Object </h2>
+    <script>
+        const today = new Date();
+        document.write(today)
+        document.write("<br/> Date "+today.getDate())
+        document.write("<br/> Month "+today.getMonth())
+            today.setMonth(today.getMonth()+1);
+        document.write("<br/> Month "+today.getMonth())
+        document.write("<br/> Year "+today.getFullYear())
+        document.write("<br/> Hour "+today.getHours())
+        document.write("<br/> Minute "+today.getMinutes())
+        document.write("<br/> Second "+today.getSeconds())
+    </script>
+</body>
+</html>
