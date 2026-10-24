@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to HTML Web Page using heading tag</h1>
+    <p id="p1">Welcome to HTML using Para Tag</p>
+    <p></p>
+    <script>
+        // read html contents ie h1 tag 
+        let h1TagValue = document.getElementsByTagName("h1")[0].innerHTML
+        alert(h1TagValue)
+        let p1TagValue = document.getElementById("p1").innerHTML
+        alert(p1TagValue)
+        let p2Tag = document.getElementsByTagName("p")[1]
+        p2Tag.innerHTML="Added content using JavaScript"
+    </script>
+</body>
+</html>

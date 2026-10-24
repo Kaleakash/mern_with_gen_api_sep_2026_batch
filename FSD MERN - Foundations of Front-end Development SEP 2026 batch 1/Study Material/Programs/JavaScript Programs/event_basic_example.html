@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Register event on HTML Side" id="b1"
+    onclick="fun1()"/>
+
+    <input type="button" value="Register event on Js Side" id="b2"/>
+
+    <script>
+        function fun1() {
+            alert("Event fired")
+        }
+        let buttonRef = document.getElementById("b2")
+        buttonRef.addEventListener("click",()=> {
+            alert("Event fired")
+        })
+    </script>
+</body>
+</html>
