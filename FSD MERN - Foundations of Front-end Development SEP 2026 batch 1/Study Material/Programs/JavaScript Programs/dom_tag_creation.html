@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addContent() {
+               // alert("Event generated")
+               let name = document.getElementById("n1").value
+               // creating new tag 
+               let pTag = document.createElement("p")       //<p></p>
+               //let pTagContent = document.createTextNode("Welcome")  // Welcome 
+               let pTagContent = document.createTextNode(name)
+               pTag.appendChild(pTagContent)            // <p>Welcome </p>
+               document.getElementById("result").appendChild(pTag)  // <div><p>Welcome</p></div>
+               document.getElementById("n1").value=""
+            }
+    </script>
+</head>
+<body>
+    <input type="text" id="n1" placeholder="Enter name"/>
+    <input type="button" value="Add" onclick="addContent()"/>
+    <hr/>
+    <div id="result"></div>
+</body>
+</html>

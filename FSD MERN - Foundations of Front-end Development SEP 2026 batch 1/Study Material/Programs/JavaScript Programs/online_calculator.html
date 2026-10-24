@@ -17,6 +17,15 @@
                 document.getElementById("n2").value=""
                 //alert(sum)
             }
+            function subNumber() {
+                let firstNumber = document.getElementById("n1").value
+                let secondNumber = document.getElementById("n2").value
+                let diff = eval(firstNumber)-eval(secondNumber)
+                alert(diff)
+                //let resultField = document.getElementById("n3")
+                //resultField.value=diff
+                document.getElementById("n3").value = diff
+            }
     </script>
 </head>
 <body>
@@ -28,7 +37,7 @@
         <label>Result</label>
             <input type="text" name="result" id="n3" readonly/><br/>
         <input type="button" value="Add" id="b1" onclick="addNumber()"/>
-        <input type="button" value="Sub" id="b2"/>
+        <input type="button" value="Sub" id="b2" onclick="subNumber()"/>
         <br/>
         <div id="output"></div>
     </form>
