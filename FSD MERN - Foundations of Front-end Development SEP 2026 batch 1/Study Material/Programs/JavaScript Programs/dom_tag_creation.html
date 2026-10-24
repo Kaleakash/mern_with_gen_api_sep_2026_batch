@@ -11,10 +11,11 @@
                // creating new tag 
                let pTag = document.createElement("p")       //<p></p>
                //let pTagContent = document.createTextNode("Welcome")  // Welcome 
-               let pTagContent = document.createTextNode(name)
-               pTag.appendChild(pTagContent)            // <p>Welcome </p>
+               let pTagContent = document.createTextNode(name)  // dynamic name 
+               pTag.appendChild(pTagContent)            // <p>Raj </p>
                document.getElementById("result").appendChild(pTag)  // <div><p>Welcome</p></div>
                document.getElementById("n1").value=""
+             //  document.getElementsByTagName("body")[0].appendChild(pTag)
             }
     </script>
 </head>
