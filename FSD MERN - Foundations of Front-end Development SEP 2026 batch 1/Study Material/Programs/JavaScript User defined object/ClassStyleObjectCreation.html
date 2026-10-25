@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Class Style Object creation</h2>
+    <script>
+        function Employee() {
+
+        }
+        Employee()
+        let emp1 = new Employee()
+        class Customer {
+
+        }
+        let cust1  = new Customer()
+        class Product {
+            pid =100
+            pname = "TV"
+            price = 55000
+            displayProductDetails(){
+                    document.write("<br/> Product details inside function")
+                    document.write("<br/> PId is "+this.pid)
+                    document.write("<br/> PName is "+this.pname)
+                    document.write("<br/> Price is "+this.price)
+            }
+        }
+        let p1 = new Product();
+        document.write("<br/> Product details")
+        document.write("<br/> Pid is "+p1.pid)
+        document.write("<br/> PName is "+p1.pname)
+        document.write("<br/> Price is "+p1.price)
+    </script>
+</body>
+</html>
