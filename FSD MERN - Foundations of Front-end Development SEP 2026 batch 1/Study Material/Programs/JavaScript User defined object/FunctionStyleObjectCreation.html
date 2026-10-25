@@ -13,6 +13,7 @@
         }
         //Employee()
         let emp1 = new Employee()       // now it is consider as object 
+        
         function Customer() {
             this.cid = 100          // property this keyword. 
             this.cname = "Raj"
@@ -27,6 +28,20 @@
         document.write("<br/> Customer Age is "+cust1.age)
         //document.write("<br/> Customer City is "+cust1.city)
         //document.write("<br/> Customer City is "+cust1.state)
+
+        function Product() {
+            this.pid = 100
+            this.pname = "TV"
+            this.price = 550000
+            this.displayProduct = function() {
+                document.write("<br/> Product details")
+                document.write("<br/> Product id "+this.pid)
+                document.write("<br/> Product name "+this.pname)
+                document.write("<br/> Product price "+this.price)
+            }
+        }
+        let p1 = new Product()
+        p1.displayProduct()
     </script>
 </body>
 </html>
