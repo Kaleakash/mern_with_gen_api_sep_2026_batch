@@ -8,31 +8,52 @@
 <body>
     <h2>Class Style Object creation</h2>
     <script>
-        function Employee() {
+        // function Employee() {
 
-        }
-        Employee()
-        let emp1 = new Employee()
-        class Customer {
+        // }
+        // Employee()
+        // let emp1 = new Employee()
+        // class Customer {
 
-        }
-        let cust1  = new Customer()
-        class Product {
-            pid =100
-            pname = "TV"
-            price = 55000
-            displayProductDetails(){
-                    document.write("<br/> Product details inside function")
-                    document.write("<br/> PId is "+this.pid)
-                    document.write("<br/> PName is "+this.pname)
-                    document.write("<br/> Price is "+this.price)
+        // }
+        // let cust1  = new Customer()
+        // class Product {
+        //     pid =100
+        //     pname = "TV"
+        //     price = 55000
+        //     displayProductDetails(){
+        //             document.write("<br/> Product details inside function")
+        //             document.write("<br/> PId is "+this.pid)
+        //             document.write("<br/> PName is "+this.pname)
+        //             document.write("<br/> Price is "+this.price)
+        //     }
+        // }
+        // let p1 = new Product();
+        // document.write("<br/> Product details")
+        // document.write("<br/> Pid is "+p1.pid)
+        // document.write("<br/> PName is "+p1.pname)
+        // document.write("<br/> Price is "+p1.price)
+        // p1.displayProductDetails();
+
+        class Product{
+            constructor(pid,pname,price) {
+                document.write("<br/> Object created..")
+                this.pid = pid
+                this.pname = pname
+                this.price = price
+            }
+            displayProduct() {
+                document.write("<br/> display Product")
+                document.write("<br/> PId "+this.pid)
+                document.write("<br/> PName "+this.pname)
+                document.write("<br/> Price "+this.price)
             }
         }
-        let p1 = new Product();
-        document.write("<br/> Product details")
-        document.write("<br/> Pid is "+p1.pid)
-        document.write("<br/> PName is "+p1.pname)
-        document.write("<br/> Price is "+p1.price)
+        let p1 = new Product(100,"TV",55000)
+        let p2 = new Product(101,"Computer",35000)
+        p1.displayProduct()
+        p2.displayProduct()
+       
     </script>
 </body>
 </html>
