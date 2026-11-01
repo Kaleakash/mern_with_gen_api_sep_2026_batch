@@ -36,7 +36,7 @@ function loadFoodDetails() {
             foodImage.setAttribute("src", menu.strMealThumb);
             foodImage.setAttribute("width", "150px");
             foodImage.setAttribute("height", "150px");
-
+            // <img src="" alt="" width="150px" height="150px">
             let foodNameTag = document.createElement("b");
 
             let foodNameContent =
