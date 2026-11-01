@@ -5,7 +5,8 @@
 let BASE_URL = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
 function loadFoodDetails() {
-
+    let user = sessionStorage.getItem("emailId");
+    document.getElementById("userName").innerHTML = user;
     // get the food name from input field.
     let foodName = document.getElementById("foodName").value;
 
